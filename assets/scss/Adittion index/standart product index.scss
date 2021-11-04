@@ -1,0 +1,194 @@
+// intoduction section
+#introduction {
+    height: 300px;
+    background-color: rgb(236, 236, 236);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    p {
+        color: #998888;
+        font-size: 20px;
+    }
+
+    h1 {
+        line-height: 1.32em;
+        color: #0e0e0e;
+        font-family: playfair display, serif;
+        font-size: 60px;
+
+    }
+}
+
+// amaryllis section
+#amaryllis {
+    padding-top: 100px;
+    border-bottom: 1px solid grey;
+
+    .small-images {
+        .small-image {
+            max-width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .big-img {
+        max-width: 100%;
+        height: 830px;
+    }
+
+    .amaryllis-text {
+        p {
+            color: rgb(66, 63, 63);
+            font-size: 15px;
+        }
+
+        .quantify {
+            border: 0.1px solid rgb(212, 210, 210);
+            height: 50px;
+            width: 450px;
+            margin-top: 50px;
+
+            span {
+                color: rgb(192, 188, 188);
+                padding-left: 10px;
+                text-align: center;
+                font-size: 15px;
+                margin-right: 100px;
+            }
+
+            #minus {
+                border: none;
+
+                i {
+                    color: grey;
+                    background-color: none;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+
+            #add {
+                border: none;
+
+                i {
+                    color: grey;
+                    background-color: none;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        input {
+            border: none;
+            text-align: center;
+            width: 20px;
+        }
+
+        .add-cart {
+            border: 1px solid black;
+            width: 174px;
+            background-color: black;
+            height: 50px;
+            color: white;
+            margin-left: 47px;
+        }
+
+        p {
+            margin-top: 50px;
+            color: rgb(88, 82, 82);
+            line-height: 30px;
+        }
+    }
+
+    .buttons {
+        padding-top: 100px;
+
+        .amaryllis-button {
+            width: 230px;
+            height: 70px;
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            color: rgb(78, 76, 76);
+            border-right: 1px solid rgb(158, 153, 153);
+            border-top: 1px solid rgb(158, 153, 153);
+
+            &:hover {
+                background-color: rgb(12, 1, 1);
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        .description {
+            border-left: 1px solid rgb(158, 153, 153);
+            background-color: rgb(194, 59, 59);
+            color: white;
+
+        }
+    }
+}
+
+// INFORMATION SECTION
+#information {
+    border-bottom: 1px solid grey;
+
+    .description {
+        padding-top: 60px;
+        padding-bottom: 100px;
+
+        p {
+            margin-top: 30px;
+            color: rgb(131, 127, 127);
+            font-size: 15px;
+
+        }
+    }
+}
+
+// related-product section
+
+#related-products {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+    .heading {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .card-group {
+        padding-top: 20px;
+        border: none;
+
+        .card {
+            margin-right: 40px;
+            border: none;
+
+            .card-img-top {
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.1s ease-out;
+                }
+            }
+
+            .card-title {
+                text-align: center;
+                color: rgb(109, 106, 106);
+                padding-top: 20px;
+            }
+
+            .card-text {
+                text-align: center;
+                color: rgb(245, 244, 244);
+            }
+        }
+    }
+}

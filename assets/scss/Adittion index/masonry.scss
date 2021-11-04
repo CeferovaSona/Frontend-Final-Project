@@ -1,0 +1,72 @@
+// intoduction section
+#introduction {
+    height: 300px;
+    background-color: rgb(236, 236, 236);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    p {
+        color: #998888;
+        font-size: 20px;
+    }
+
+    h1 {
+        line-height: 1.32em;
+        color: #0e0e0e;
+        font-family: playfair display, serif;
+        font-size: 60px;
+
+    }
+}
+
+// blog section 
+#blog{
+    padding-top: 50px;
+    margin-bottom:1300px;
+    .card-img-top{ 
+        height: 100%;
+        width: 100%;
+        &:hover{
+        transform: scale(1.1);
+        transition:0.1s ease-out;
+    }
+    }
+    .card{
+        background: none;
+        border:none;
+        .image{
+            position: relative;
+        }
+        .image-text{
+            position: absolute;
+            width:100px;
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            margin:10px;
+        }
+
+       
+        .card-body{
+            background-color:#fafafa ;
+            padding-top: 70px;
+            text-align: center;
+            h4{
+                color:rgb(61, 60, 60);
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            p{
+                color:gray;
+            }
+        }
+    }
+}
+
+// footer{
+//     #information {
+//         padding-top: 400px;
+// }
+// }

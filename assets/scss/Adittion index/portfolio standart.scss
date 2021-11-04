@@ -1,0 +1,77 @@
+// intoduction section
+#introduction {
+    height: 300px;
+    background-color: rgb(236, 236, 236);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        line-height: 1.32em;
+        color: #0e0e0e;
+        font-family: playfair display, serif;
+        font-size: 60px;
+
+    }
+}
+
+// choice section
+#choice {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    a {
+        text-decoration: none;
+        color: rgb(68, 62, 62);
+        font-size: 15px;
+        margin-right: 50px;
+
+        &:hover {
+            color: red;
+        }}
+
+        .card-group {
+            padding-top: 50px;
+            border: none;
+            text-align: center;
+
+            .card {
+                margin-right: 80px;
+                border: none;
+
+                .card-img-top {
+                    height:300px;
+                    width: 100%;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.1s ease-out;
+                    }
+                }
+
+                .card-title {
+                    text-align: center;
+                    color: rgb(109, 106, 106);
+                    padding-top: 20px;
+                }
+
+                .card-text {
+                    color: rgb(245, 244, 244);
+                }
+            }
+        }
+        .button{
+            text-align: center;
+            padding-top: 100px;
+           .more{
+            height: 60px;
+            width:200px;
+            border:1px solid red;
+            color:white;
+            background-color:rgb(165, 42, 42);
+            &:hover{
+                background-color: red;
+            }
+           }
+        }
+    }

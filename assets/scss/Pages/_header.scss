@@ -1,0 +1,92 @@
+/* Dropdown Button */
+header{
+  h6{
+    color:rgb(59, 50, 50);
+  }
+    .logo-img{
+        height:30px;
+        width:300px;
+        text-align: center;
+        &:hover{
+            transform: scale(1.1);
+            transition:0.1s ease-out;
+        }
+    }
+}
+.dropbtn {
+    background: none;
+    color:rgb(59, 50, 50);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    &:hover{
+        text-decoration: underline;
+        transition:0.1s ease-out;
+    }
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color:#494444 ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    &:hover{
+     text-decoration: underline;
+     transform: scale(1.1);
+     transition:0.1s ease-out;
+     cursor: pointer;
+    }
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(240, 230, 230);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  .shop-contents {
+      padding-top: 70px;
+
+    li a{
+        margin-right:30px ;
+        color:#6d6666 ;
+        font-size: 15px;
+    }
+  }
+  .icons{
+  
+    .search{
+      .search-icon{
+        margin-right: 40px;
+        margin-left: 20px;
+        font-size: 18px;
+        color:#9c9a9a ;
+        &:hover{
+          color:red;
+        }
+      }
+    }
+  }
+  .bag{
+    color:#9c9a9a ;
+    background: none;
+    font-size:18px ;
+    margin-right: 10px;
+  }
+  

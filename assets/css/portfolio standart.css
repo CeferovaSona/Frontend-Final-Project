@@ -1,0 +1,84 @@
+#introduction {
+  height: 300px;
+  background-color: #ececec;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#introduction h1 {
+  line-height: 1.32em;
+  color: #0e0e0e;
+  font-family: playfair display, serif;
+  font-size: 60px;
+}
+
+#choice {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#choice a {
+  text-decoration: none;
+  color: #443e3e;
+  font-size: 15px;
+  margin-right: 50px;
+}
+
+#choice a:hover {
+  color: red;
+}
+
+#choice .card-group {
+  padding-top: 50px;
+  border: none;
+  text-align: center;
+}
+
+#choice .card-group .card {
+  margin-right: 80px;
+  border: none;
+}
+
+#choice .card-group .card .card-img-top {
+  height: 300px;
+  width: 100%;
+}
+
+#choice .card-group .card .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#choice .card-group .card .card-title {
+  text-align: center;
+  color: #6d6a6a;
+  padding-top: 20px;
+}
+
+#choice .card-group .card .card-text {
+  color: #f5f4f4;
+}
+
+#choice .button {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#choice .button .more {
+  height: 60px;
+  width: 200px;
+  border: 1px solid red;
+  color: white;
+  background-color: brown;
+}
+
+#choice .button .more:hover {
+  background-color: red;
+}

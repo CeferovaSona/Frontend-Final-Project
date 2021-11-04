@@ -1,0 +1,73 @@
+// @import "/assets/scss/variables/variables";
+@import "./addToCart";
+#valentine{
+    height:600px;
+    background-color:rgb(253, 249, 249);
+    width:auto;
+    padding-top: 150px;
+    .item1 .wrapper{
+        position: relative;
+        display: inline-block;
+        &:hover{
+            transition: color .2s ease-out;
+            cursor:pointer;
+        }
+        .content {
+            position: absolute;
+            display: inline-block;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            color: #FFF;
+            width: 100%;
+            text-align: center;
+            z-index: 999;
+            .play {
+                font-size: 50px;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                padding: 5px 25px;
+                border:0.1 solid black;
+                border-radius: 50%;
+                background-color: white;
+                height: 100px;
+                width:100px;
+                i{
+                  text-align: center;
+                  color: red;
+                  font-size: 25px;
+                  padding-top: 30px;
+                }
+            }
+        }
+        .video{
+            height:100%;
+            width:100%;
+            &:hover{
+                transform: scale(1.1);
+                transition:0.1s ease-out;
+            }
+          
+        }
+
+    }
+    .item2{
+        color:#4b4949 ;
+        padding-left: 50px;
+        h2{
+            color:black;
+            line-height: 50px;
+            font-size: 40px;
+        }
+      p{
+          font-size: 18px;
+          line-height:25px ;
+      }
+      i{
+          color:red;
+          margin-right:15px;
+      }
+    }
+}
+// burada responsivlikde sadece asagi olcude sectionun heightin boyut

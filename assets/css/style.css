@@ -1,0 +1,1196 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 15px;
+  line-height: 24px;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row::after {
+  contain: "";
+  display: block;
+  clear: both;
+}
+
+.col-12 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-3 {
+  width: calc(100%/12*3);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-4 {
+  width: calc(100%/12*4);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Dropdown Button */
+header h6 {
+  color: #3b3232;
+}
+
+header .logo-img {
+  height: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+header .logo-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.dropbtn {
+  background: none;
+  color: #3b3232;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #494444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f0e6e6;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shop-contents {
+  padding-top: 70px;
+}
+
+.shop-contents li a {
+  margin-right: 30px;
+  color: #6d6666;
+  font-size: 15px;
+}
+
+.icons .search .search-icon {
+  margin-right: 40px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #9c9a9a;
+}
+
+.icons .search .search-icon:hover {
+  color: red;
+}
+
+.bag {
+  color: #9c9a9a;
+  background: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#slider {
+  height: 600px;
+  padding-top: 100px;
+  background-color: rgba(219, 221, 221, 0.39);
+}
+
+#slider .slider-text {
+  padding-top: 100px;
+}
+
+#slider .slider-text h2 {
+  font-size: 40px;
+}
+
+#slider .slider-text p {
+  color: #8f8f8f;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#slider .carousel .carousel-inner .slider-image {
+  height: 500px;
+  width: 100%;
+  border: none;
+  background-color: none;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#addToCart {
+  padding-top: 100px;
+}
+
+#addToCart .links a {
+  text-decoration: none;
+  color: #3a3636;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+#addToCart .links a:hover {
+  color: red;
+}
+
+#addToCart .choice {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#addToCart .choice #addition {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+  display: none;
+}
+
+#addToCart .choice #addition:hover {
+  color: red;
+}
+
+#addToCart .choice .heading {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#addToCart .choice .card-group {
+  padding-top: 20px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card {
+  margin-right: 40px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+#addToCart .choice .card-group .card .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#addToCart .choice .card-group .card #price {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+}
+
+#addToCart .choice .card-group .card #price:hover {
+  color: red;
+}
+
+#addToCart .choice .card-group .card .card-title {
+  text-align: center;
+  color: #6d6a6a;
+  padding-top: 20px;
+}
+
+#addToCart .choice .card-group .card .card-text {
+  text-align: center;
+  color: #f5f4f4;
+}
+
+#valentine {
+  height: 600px;
+  background-color: #fdf9f9;
+  width: auto;
+  padding-top: 150px;
+}
+
+#valentine .item1 .wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#valentine .item1 .wrapper:hover {
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+  cursor: pointer;
+}
+
+#valentine .item1 .wrapper .content {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+#valentine .item1 .wrapper .content .play {
+  font-size: 50px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 25px;
+  border: 0.1 solid black;
+  border-radius: 50%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+}
+
+#valentine .item1 .wrapper .content .play i {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+#valentine .item1 .wrapper .video {
+  height: 100%;
+  width: 100%;
+}
+
+#valentine .item1 .wrapper .video:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#valentine .item2 {
+  color: #4b4949;
+  padding-left: 50px;
+}
+
+#valentine .item2 h2 {
+  color: black;
+  line-height: 50px;
+  font-size: 40px;
+}
+
+#valentine .item2 p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#valentine .item2 i {
+  color: red;
+  margin-right: 15px;
+}
+
+/* Dropdown Button */
+header h6 {
+  color: #3b3232;
+}
+
+header .logo-img {
+  height: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+header .logo-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.dropbtn {
+  background: none;
+  color: #3b3232;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #494444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f0e6e6;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shop-contents {
+  padding-top: 70px;
+}
+
+.shop-contents li a {
+  margin-right: 30px;
+  color: #6d6666;
+  font-size: 15px;
+}
+
+.icons .search .search-icon {
+  margin-right: 40px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #9c9a9a;
+}
+
+.icons .search .search-icon:hover {
+  color: red;
+}
+
+.bag {
+  color: #9c9a9a;
+  background: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#slider {
+  height: 600px;
+  padding-top: 100px;
+  background-color: rgba(219, 221, 221, 0.39);
+}
+
+#slider .slider-text {
+  padding-top: 100px;
+}
+
+#slider .slider-text h2 {
+  font-size: 40px;
+}
+
+#slider .slider-text p {
+  color: #8f8f8f;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#slider .carousel .carousel-inner .slider-image {
+  height: 500px;
+  width: 100%;
+  border: none;
+  background-color: none;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#addToCart {
+  padding-top: 100px;
+}
+
+#addToCart .links a {
+  text-decoration: none;
+  color: #3a3636;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+#addToCart .links a:hover {
+  color: red;
+}
+
+#addToCart .choice {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#addToCart .choice #addition {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+  display: none;
+}
+
+#addToCart .choice #addition:hover {
+  color: red;
+}
+
+#addToCart .choice .heading {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#addToCart .choice .card-group {
+  padding-top: 20px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card {
+  margin-right: 40px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+#addToCart .choice .card-group .card .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#addToCart .choice .card-group .card #price {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+}
+
+#addToCart .choice .card-group .card #price:hover {
+  color: red;
+}
+
+#addToCart .choice .card-group .card .card-title {
+  text-align: center;
+  color: #6d6a6a;
+  padding-top: 20px;
+}
+
+#addToCart .choice .card-group .card .card-text {
+  text-align: center;
+  color: #f5f4f4;
+}
+
+#valentine {
+  height: 600px;
+  background-color: #fdf9f9;
+  width: auto;
+  padding-top: 150px;
+}
+
+#valentine .item1 .wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#valentine .item1 .wrapper:hover {
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+  cursor: pointer;
+}
+
+#valentine .item1 .wrapper .content {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+#valentine .item1 .wrapper .content .play {
+  font-size: 50px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 25px;
+  border: 0.1 solid black;
+  border-radius: 50%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+}
+
+#valentine .item1 .wrapper .content .play i {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+#valentine .item1 .wrapper .video {
+  height: 100%;
+  width: 100%;
+}
+
+#valentine .item1 .wrapper .video:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#valentine .item2 {
+  color: #4b4949;
+  padding-left: 50px;
+}
+
+#valentine .item2 h2 {
+  color: black;
+  line-height: 50px;
+  font-size: 40px;
+}
+
+#valentine .item2 p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#valentine .item2 i {
+  color: red;
+  margin-right: 15px;
+}
+
+#experts {
+  height: 800px;
+  padding-top: 100px;
+}
+
+#experts .experts_item1 {
+  text-align: center;
+}
+
+#experts .experts_item1 p {
+  padding-top: 30px;
+  color: #7e7777;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#experts .experts_item2 {
+  padding-top: 50px;
+}
+
+#experts .experts_item2 .image-text {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#experts .experts_item2 .image-text p {
+  color: #4b4949;
+}
+
+#experts .experts_item2 .experts_image {
+  margin-right: 100px;
+}
+
+#subscribe {
+  height: 500px;
+  background: none;
+  background-image: url("/assets/images/subscribe/subscribe img.jpg");
+  background-position: center top !important;
+  background-attachment: fixed;
+  background-size: cover;
+  position: static;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 150px;
+}
+
+#subscribe .subscribe-item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+#subscribe .subscribe-item2 {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+#subscribe .subscribe-item2 #subscribe-input {
+  height: 60px;
+  width: 400px;
+  padding-left: 10px;
+  border: none;
+}
+
+#subscribe .subscribe-item2 #subscribe-button {
+  height: 60px;
+  width: 200px;
+  padding-left: 10px;
+  border: none;
+  background-color: firebrick;
+  color: white;
+}
+
+#subscribe .subscribe-item2 #subscribe-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#subscribe #sos-alert {
+  border: 2px solid red;
+  height: 50px;
+  width: 400px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 350px;
+  margin-top: 20px;
+  display: none;
+}
+
+#subscribe #accept-alert {
+  border: 2px solid green;
+  height: 70px;
+  width: 400px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 350px;
+  margin-top: 10px;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#blog {
+  height: 700px;
+  background-color: #fafafa;
+  padding-top: 100px;
+}
+
+#blog .blog-text {
+  font-family: Lora,serif;
+  text-align: center;
+}
+
+#blog .blog-text h4 {
+  font-size: 40px;
+}
+
+#blog .blog-text p {
+  padding-top: 20px;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+#blog .blog-item {
+  padding-top: 50px;
+}
+
+#blog .blog-item .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+#blog .blog-item .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#blog .blog-item .card {
+  background: none;
+  border: none;
+}
+
+#blog .blog-item .card .image {
+  position: relative;
+}
+
+#blog .blog-item .card .image-text {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+#blog .blog-item .card .card-body {
+  background-color: #fafafa;
+  padding-top: 70px;
+  text-align: center;
+}
+
+#blog .blog-item .card .card-body h4 {
+  color: #3d3c3c;
+}
+
+#blog .blog-item .card .card-body h4:hover {
+  cursor: pointer;
+}
+
+#blog .blog-item .card .card-body p {
+  color: gray;
+}
+
+#about-experts {
+  height: 550px;
+  background-color: rgba(160, 150, 150, 0.945);
+  padding: 50px;
+  text-align: center;
+}
+
+#about-experts .experts-image {
+  text-align: center;
+}
+
+#about-experts body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+#about-experts .slideshow-container {
+  position: relative;
+}
+
+#about-experts .mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+#about-experts .prev, #about-experts .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  color: #928787;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#about-experts .next {
+  right: 50px;
+  border-radius: 3px 0 0 3px;
+  margin-left: 300px;
+}
+
+#about-experts .prev {
+  left: 50px;
+}
+
+#about-experts .prev:hover, #about-experts .next:hover {
+  color: rgba(26, 23, 23, 0.8);
+}
+
+#about-experts p {
+  font-style: italic;
+  color: rgba(27, 23, 23, 0.8);
+  padding: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Dropdown Button */
+header h6 {
+  color: #3b3232;
+}
+
+header .logo-img {
+  height: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+header .logo-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.dropbtn {
+  background: none;
+  color: #3b3232;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #494444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f0e6e6;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shop-contents {
+  padding-top: 70px;
+}
+
+.shop-contents li a {
+  margin-right: 30px;
+  color: #6d6666;
+  font-size: 15px;
+}
+
+.icons .search .search-icon {
+  margin-right: 40px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #9c9a9a;
+}
+
+.icons .search .search-icon:hover {
+  color: red;
+}
+
+.bag {
+  color: #9c9a9a;
+  background: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#slider {
+  height: 600px;
+  padding-top: 100px;
+  background-color: rgba(219, 221, 221, 0.39);
+}
+
+#slider .slider-text {
+  padding-top: 100px;
+}
+
+#slider .slider-text h2 {
+  font-size: 40px;
+}
+
+#slider .slider-text p {
+  color: #8f8f8f;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#slider .carousel .carousel-inner .slider-image {
+  height: 500px;
+  width: 100%;
+  border: none;
+  background-color: none;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#addToCart {
+  padding-top: 100px;
+}
+
+#addToCart .links a {
+  text-decoration: none;
+  color: #3a3636;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+#addToCart .links a:hover {
+  color: red;
+}
+
+#addToCart .choice {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#addToCart .choice #addition {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+  display: none;
+}
+
+#addToCart .choice #addition:hover {
+  color: red;
+}
+
+#addToCart .choice .heading {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#addToCart .choice .card-group {
+  padding-top: 20px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card {
+  margin-right: 40px;
+  border: none;
+}
+
+#addToCart .choice .card-group .card .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+#addToCart .choice .card-group .card .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#addToCart .choice .card-group .card #price {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+}
+
+#addToCart .choice .card-group .card #price:hover {
+  color: red;
+}
+
+#addToCart .choice .card-group .card .card-title {
+  text-align: center;
+  color: #6d6a6a;
+  padding-top: 20px;
+}
+
+#addToCart .choice .card-group .card .card-text {
+  text-align: center;
+  color: #f5f4f4;
+}
+
+footer {
+  height: 550px;
+  background-color: rgba(238, 211, 224, 0.87);
+}
+
+footer #information {
+  height: 450px;
+  padding-top: 100px;
+  border-bottom: 0.01px solid #817b7b;
+}
+
+footer #information a {
+  color: #8b8585e1;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+footer #information a:hover {
+  color: red;
+}
+
+footer #addition {
+  color: #a09696;
+  text-align: center;
+  padding-top: 30px;
+}
+
+footer #addition a {
+  text-decoration: none;
+  color: #4b4949;
+  margin-right: 30px;
+}
+
+footer #addition a:hover {
+  color: red;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #4b4949;
+  margin-right: 30px;
+}
+
+footer .social-media a:hover {
+  color: red;
+}
+
+footer #upBtn {
+  height: 50px;
+  width: 40px;
+  color: white;
+  background-color: tomato;
+  margin-left: 230px;
+}
+
+footer #upBtn .btnItem {
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}

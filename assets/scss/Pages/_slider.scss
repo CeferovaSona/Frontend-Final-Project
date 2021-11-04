@@ -1,0 +1,35 @@
+@import "./header";
+
+#slider {
+  height: 600px;
+  padding-top: 100px;
+  background-color: rgba(219, 221, 221, 0.39);
+
+  .slider-text {
+    padding-top: 100px;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      color: #8f8f8f;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .carousel {
+    .carousel-inner {
+      .slider-image {
+        height: 500px;
+        width: 100%;
+        border: none;
+        background-color: none;
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+    }
+  }
+}

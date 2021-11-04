@@ -1,0 +1,61 @@
+@import "./subscribe";
+#blog{
+    height:700px;
+    background-color: #fafafa ;
+    padding-top: 100px;
+    .blog-text{
+        font-family: Lora,serif;
+       text-align: center;
+       h4{
+           font-size: 40px;
+       }
+       p{
+           padding-top: 20px;
+           color:#fafafa ; 
+           font-size: 20px;
+       }
+
+    }
+    .blog-item{
+        padding-top: 50px;
+        .card-img-top{ 
+            height: 100%;
+            width: 100%;
+            &:hover{
+            transform: scale(1.1);
+            transition:0.1s ease-out;
+        }
+        }
+        .card{
+            background: none;
+            border:none;
+            .image{
+                position: relative;
+            }
+            .image-text{
+                position: absolute;
+                width:100px;
+                height: 30px;
+                background-color: white;
+                text-align: center;
+                margin:10px;
+            }
+
+           
+            .card-body{
+                background-color:#fafafa ;
+                padding-top: 70px;
+                text-align: center;
+                h4{
+                    color:rgb(61, 60, 60);
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                p{
+                    color:gray;
+                }
+            }
+        }
+    }
+}

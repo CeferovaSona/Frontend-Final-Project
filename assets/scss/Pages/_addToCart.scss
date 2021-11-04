@@ -1,0 +1,74 @@
+@import "./slider";
+
+#addToCart{
+    padding-top: 100px;
+    .links{
+      
+    a{
+        text-decoration: none;
+        color: rgb(58, 54, 54);
+        margin-right: 50px;
+          margin-top: 100px;
+          &:hover{
+       color:red;
+          }
+    }
+}
+.choice{
+    padding-top: 70px;
+    padding-bottom: 80px;
+#addition{
+    border:none;
+    color:rgb(85, 79, 79);
+    background-color: white;
+    display: none;
+    &:hover{
+        color:red;
+           }
+}
+    .heading {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .card-group {
+        padding-top: 20px;
+        border: none;
+
+        .card {
+            margin-right: 40px;
+            border: none;
+
+            .card-img-top {
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.1s ease-out;
+                }
+            }
+#price{
+    border:none;
+    color:rgb(85, 79, 79);
+    background-color: white;
+    // display: none;
+    &:hover{
+        color:red;
+           }
+
+}
+            .card-title {
+                text-align: center;
+                color: rgb(109, 106, 106);
+                padding-top: 20px;
+            }
+
+            .card-text {
+                text-align: center;
+                color: rgb(245, 244, 244);
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,56 @@
+@import "./blog";
+
+
+#about-experts{
+    height:550px;
+    background-color:rgba(160, 150, 150, 0.945); 
+    padding:50px;
+    text-align: center;
+    .experts-image{
+      text-align: center;
+    }
+    body {font-family: Verdana, sans-serif; margin:0}
+
+    .slideshow-container {
+      position: relative;
+    }
+    
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      color:rgb(146, 135, 135);
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 50px;
+      border-radius: 3px 0 0 3px;
+      margin-left: 300px;
+      
+    }
+    .prev{
+        left:50px;
+    }
+    
+    .prev:hover, .next:hover {
+      color: rgba(26, 23, 23, 0.8);
+    }
+    
+    p{
+        font-style: italic;
+        color:rgba(27, 23, 23, 0.8); 
+        padding:50px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+}
