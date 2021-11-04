@@ -22,30 +22,7 @@
   font-size: 60px;
 }
 
-#accordion {
+#accordion-item {
   padding-top: 100px;
-  margin-bottom: 100px;
-}
-
-#accordion .content {
-  display: none;
-}
-
-#accordion .item.active > .content {
-  display: block;
-}
-
-#accordion .item.active > .header {
-  color: white;
-  background-color: black;
-}
-
-#accordion .header {
-  padding: 16px;
-  margin: 8px;
-  background-color: lightgrey;
-}
-
-#accordion .accordion-item2 {
-  padding-top: 200px;
+  margin-bottom: 1000px;
 }

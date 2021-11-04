@@ -66,16 +66,29 @@ $(document).ready(function(){
   })
 })
 // accordion html 
-$(function() {
-  $('.header').on('click', function() {
-    
-    var hdr = $(this);
-    var grandParents = hdr.parent().parent();
-    grandParents.find('.item.active').removeClass('active');
-    grandParents.find('.content').stop().slideUp().removeClass('active');
-    hdr.closest('.item').find('.content').stop().slideToggle();
-    hdr.parent().toggleClass('active');
-    
+$(function () {
+  $("#accordion").accordion({
+      heightStyle: "fill",
+      icons: {
+          "header": "ui-icon-circle-plus",
+          "headerSelected": "ui-icon-circle-minus"
+      }
+  });
+  $("input").each(function () {
+      $(this).change(function () {
+          if ($(this).attr("id") == "1") {
+              $("#accordion").accordion("option", "icons", {
+                  "header": "ui-icon-circle-plus",
+                  "headerSelected": "ui-icon-circle-minus"
+              });
+          } else if ($(this).attr("id") == "2") {
+              $("#accordion").accordion("option", "icons", {
+                  "header": "ui-icon-plus",
+                  "headerSelected": "ui-icon-minus"
+              });
+          }
+          $("#accordion").accordion("refresh");
+      });
   });
 });
 // footer section 
