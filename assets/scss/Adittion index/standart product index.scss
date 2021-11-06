@@ -1,10 +1,11 @@
 // intoduction section
 #introduction {
-    height: 300px;
+    padding-top: 100px;
     background-color: rgb(236, 236, 236);
     padding-top: 100px;
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
 
     p {
         color: #998888;
@@ -23,7 +24,6 @@
 // amaryllis section
 #amaryllis {
     padding-top: 100px;
-    border-bottom: 1px solid grey;
 
     .small-images {
         .small-image {
@@ -55,100 +55,96 @@
                 padding-left: 10px;
                 text-align: center;
                 font-size: 15px;
-                margin-right: 100px;
+                margin-right: 80px;
             }
 
-            #minus {
+            #decrement {
                 border: none;
-
-                i {
-                    color: grey;
-                    background-color: none;
-                    font-size: 20px;
-                    text-align: center;
-                }
+                background-color: white;
             }
 
-            #add {
+            #increment {
                 border: none;
-
-                i {
-                    color: grey;
-                    background-color: none;
-                    font-size: 20px;
-                    text-align: center;
-                }
+                background-color: white;
             }
 
-        }
+            p {
+                display: inline;
+                text-align: center;
+                margin: 0 26px;
+            }
 
-        input {
-            border: none;
-            text-align: center;
-            width: 20px;
-        }
-
-        .add-cart {
-            border: 1px solid black;
-            width: 174px;
-            background-color: black;
-            height: 50px;
-            color: white;
-            margin-left: 47px;
-        }
-
-        p {
-            margin-top: 50px;
-            color: rgb(88, 82, 82);
-            line-height: 30px;
-        }
-    }
-
-    .buttons {
-        padding-top: 100px;
-
-        .amaryllis-button {
-            width: 230px;
-            height: 70px;
-            border: none;
-            background-color: white;
-            font-size: 15px;
-            color: rgb(78, 76, 76);
-            border-right: 1px solid rgb(158, 153, 153);
-            border-top: 1px solid rgb(158, 153, 153);
-
-            &:hover {
-                background-color: rgb(12, 1, 1);
-                cursor: pointer;
+            .add-cart {
+                border: 1px solid black;
+                width: 161px;
+                background-color: black;
+                height: 50px;
                 color: white;
+                margin-left: 47px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(85, 76, 76);
+                }
+            }
+
+            p {
+                margin-top: 50px;
+                color: rgb(88, 82, 82);
+                line-height: 30px;
             }
         }
-
-        .description {
-            border-left: 1px solid rgb(158, 153, 153);
-            background-color: rgb(194, 59, 59);
-            color: white;
-
-        }
     }
-}
 
-// INFORMATION SECTION
-#information {
-    border-bottom: 1px solid grey;
-
-    .description {
+    .text {
         padding-top: 60px;
-        padding-bottom: 100px;
-
-        p {
-            margin-top: 30px;
-            color: rgb(131, 127, 127);
-            font-size: 15px;
-
-        }
     }
 }
+
+
+// tab-menu section
+#tab-menu {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    .tab_container{
+        padding-top: 100px;
+        .reviews-text{
+            margin-left: 50px;
+        }
+        .reviews1{
+            margin-bottom: 50px;
+        }
+                }
+    .tab_navigation {
+        .active{
+            color: white;
+            background-color: red;
+        }
+        li {
+            display: inline-block;
+            min-width: 200px;
+            min-height: 70px;
+            text-align: center;
+            padding-top: 20px;
+            border-right: 1px solid rgb(167, 163, 163);
+            font-size: 15px;
+            cursor: pointer;
+            border: 1px solid rgb(218, 212, 212);
+            &:hover{
+                color: white;
+                background-color: red;
+            }
+        }
+   
+    }
+    .text1{
+        font-size: 25px;
+        color:rgb(71, 68, 68);
+        line-height: 40px;
+    }
+
+}
+
 
 // related-product section
 

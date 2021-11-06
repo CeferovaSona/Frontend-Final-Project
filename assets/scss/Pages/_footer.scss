@@ -24,6 +24,7 @@ footer {
     }
 
     #addition {
+        position: relative;
         color: #a09696;
  text-align: center;
  padding-top: 30px;
@@ -44,22 +45,8 @@ footer {
             color: #4b4949;
             margin-right: 30px;
             &:hover{
-                color:red;
+                color:rgb(230, 5, 5);
             }
         }
-    }
-
-    #upBtn {
-        height: 50px;
-        width: 40px;
-        color: white;
-        background-color: tomato;
-        margin-left: 230px;
-        .btnItem{
-            position: relative;
-            animation-name: example;
-            animation-duration: 4s;
-        }
-       
     }
 }

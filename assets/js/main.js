@@ -39,24 +39,7 @@ var check = $.isNumeric(val);
       }
   })
 })
-// slider section
-
-// standart product list index
-
-$(document).ready(function(){
-  $(".add").click(function(){
-    var value = $("#quantify-input").val();  
-     value=value+1;
-  })
-})
-
-$(document).ready(function(){
-  $(".sub").click(function(){
-    var mark = $("#quantify-input").val();  
-     mark=mark-1;
-  })
-})
-
+/
 // addToCart section
 $(document).ready(function(){
   $("#price").click(function(){
@@ -66,29 +49,45 @@ $(document).ready(function(){
   })
 })
 // accordion html 
-$(function () {
-  $("#accordion").accordion({
-      heightStyle: "fill",
-      icons: {
-          "header": "ui-icon-circle-plus",
-          "headerSelected": "ui-icon-circle-minus"
-      }
+(function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
   });
-  $("input").each(function () {
-      $(this).change(function () {
-          if ($(this).attr("id") == "1") {
-              $("#accordion").accordion("option", "icons", {
-                  "header": "ui-icon-circle-plus",
-                  "headerSelected": "ui-icon-circle-minus"
-              });
-          } else if ($(this).attr("id") == "2") {
-              $("#accordion").accordion("option", "icons", {
-                  "header": "ui-icon-plus",
-                  "headerSelected": "ui-icon-minus"
-              });
-          }
-          $("#accordion").accordion("refresh");
-      });
-  });
+
+})(jQuery);
+// btnScrollToTop
+$(document).ready(function(){
+  $("#btnScrollToTop").click(function(){
+    $("html,body").animate({scrollTop:0},slow)
+  })
+})
+$(document).ready(function(){
+$(window).scroll(function(){
+  if ($(this).scrollTop()>40)
+  {
+    $("#btnScrollToTop").fadeIn();
+  }
+    else{
+      $("#btnScrollToTop").fadeOut();
+    }
+  
+  })
 });
-// footer section 
+// tab-menu section
+$(document).ready (function(){
+  $('.tab_container:first').show();
+  $('.tab_navigation li:first').addClass('active');
+  $('.tab_navigation li').click(function(event){
+index=$(this).index();
+$('.tab_navigation li').removeClass('active');
+$(this).addClass('active');
+$('.tab_container').hide();
+$('.tab_container').eq(index).show();
+  })
+})
+// standart product index counter

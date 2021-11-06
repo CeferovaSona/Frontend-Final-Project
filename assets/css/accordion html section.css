@@ -24,5 +24,40 @@
 
 #accordion-item {
   padding-top: 100px;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
+}
+
+#accordion-item .item1 {
+  margin-bottom: 200px;
+}
+
+#accordion-item .accordion {
+  margin: 50px;
+}
+
+#accordion-item .accordion dt, #accordion-item .accordion dd {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+#accordion-item .accordion dt:last-of-type, #accordion-item .accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+#accordion-item .accordion dt a, #accordion-item .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+#accordion-item .accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+
+#accordion-item .accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
 }

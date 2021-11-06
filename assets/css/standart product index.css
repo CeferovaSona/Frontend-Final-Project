@@ -1,5 +1,5 @@
 #introduction {
-  height: 300px;
+  padding-top: 100px;
   background-color: #ececec;
   padding-top: 100px;
   display: -webkit-box;
@@ -8,6 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 100px;
 }
 
 #introduction p {
@@ -24,7 +25,6 @@
 
 #amaryllis {
   padding-top: 100px;
-  border-bottom: 1px solid grey;
 }
 
 #amaryllis .small-images .small-image {
@@ -55,92 +55,92 @@
   padding-left: 10px;
   text-align: center;
   font-size: 15px;
-  margin-right: 100px;
+  margin-right: 80px;
 }
 
-#amaryllis .amaryllis-text .quantify #minus {
+#amaryllis .amaryllis-text .quantify #decrement {
   border: none;
+  background-color: white;
 }
 
-#amaryllis .amaryllis-text .quantify #minus i {
-  color: grey;
-  background-color: none;
-  font-size: 20px;
-  text-align: center;
-}
-
-#amaryllis .amaryllis-text .quantify #add {
+#amaryllis .amaryllis-text .quantify #increment {
   border: none;
+  background-color: white;
 }
 
-#amaryllis .amaryllis-text .quantify #add i {
-  color: grey;
-  background-color: none;
-  font-size: 20px;
+#amaryllis .amaryllis-text .quantify p {
+  display: inline;
   text-align: center;
+  margin: 0 26px;
 }
 
-#amaryllis .amaryllis-text input {
-  border: none;
-  text-align: center;
-  width: 20px;
-}
-
-#amaryllis .amaryllis-text .add-cart {
+#amaryllis .amaryllis-text .quantify .add-cart {
   border: 1px solid black;
-  width: 174px;
+  width: 161px;
   background-color: black;
   height: 50px;
   color: white;
   margin-left: 47px;
 }
 
-#amaryllis .amaryllis-text p {
+#amaryllis .amaryllis-text .quantify .add-cart:hover {
+  cursor: pointer;
+  background-color: #554c4c;
+}
+
+#amaryllis .amaryllis-text .quantify p {
   margin-top: 50px;
   color: #585252;
   line-height: 30px;
 }
 
-#amaryllis .buttons {
+#amaryllis .text {
+  padding-top: 60px;
+}
+
+#tab-menu {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+#tab-menu .tab_container {
   padding-top: 100px;
 }
 
-#amaryllis .buttons .amaryllis-button {
-  width: 230px;
-  height: 70px;
-  border: none;
-  background-color: white;
-  font-size: 15px;
-  color: #4e4c4c;
-  border-right: 1px solid #9e9999;
-  border-top: 1px solid #9e9999;
+#tab-menu .tab_container .reviews-text {
+  margin-left: 50px;
 }
 
-#amaryllis .buttons .amaryllis-button:hover {
-  background-color: #0c0101;
+#tab-menu .tab_container .reviews1 {
+  margin-bottom: 50px;
+}
+
+#tab-menu .tab_navigation .active {
+  color: white;
+  background-color: red;
+}
+
+#tab-menu .tab_navigation li {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  border-right: 1px solid #a7a3a3;
+  font-size: 15px;
   cursor: pointer;
+  border: 1px solid #dad4d4;
+}
+
+#tab-menu .tab_navigation li:hover {
   color: white;
+  background-color: red;
 }
 
-#amaryllis .buttons .description {
-  border-left: 1px solid #9e9999;
-  background-color: #c23b3b;
-  color: white;
-}
-
-#information {
-  border-bottom: 1px solid grey;
-}
-
-#information .description {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
-#information .description p {
-  margin-top: 30px;
-  color: #837f7f;
-  font-size: 15px;
+#tab-menu .text1 {
+  font-size: 25px;
+  color: #474444;
+  line-height: 40px;
 }
 
 #related-products {
