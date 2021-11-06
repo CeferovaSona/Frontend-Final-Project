@@ -1,6 +1,6 @@
 #introduction {
-  height: 300px;
-  background-color: #ececec;
+  padding-bottom: 200px;
+  background-color: #f7f7f7;
   padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,42 +22,47 @@
   font-size: 60px;
 }
 
-#accordion-item {
+#accordion {
   padding-top: 100px;
-  margin-bottom: 100px;
 }
 
-#accordion-item .item1 {
+#accordion .item {
   margin-bottom: 200px;
 }
 
-#accordion-item .accordion {
-  margin: 50px;
+#accordion .item .accordion_box .active {
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
 }
 
-#accordion-item .accordion dt, #accordion-item .accordion dd {
-  padding: 10px;
-  border: 1px solid black;
-  border-bottom: 0;
-}
-
-#accordion-item .accordion dt:last-of-type, #accordion-item .accordion dd:last-of-type {
-  border-bottom: 1px solid black;
-}
-
-#accordion-item .accordion dt a, #accordion-item .accordion dd a {
-  display: block;
-  color: black;
-  font-weight: bold;
-}
-
-#accordion-item .accordion dd {
-  border-top: 0;
-  font-size: 12px;
-}
-
-#accordion-item .accordion dd:last-of-type {
-  border-top: 1px solid white;
+#accordion .item .accordion_box .acc_trigger {
+  border: 1px solid #9e9797;
   position: relative;
-  top: -1px;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  color: #5a5555;
+  letter-spacing: 2px;
+}
+
+#accordion .item .accordion_box .acc_trigger:hover {
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+}
+
+#accordion .item .accordion_box .acc_trigger i {
+  margin-right: 20px;
+  display: none;
+}
+
+#accordion .item .accordion_box .acc_container {
+  color: #6d6969;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }

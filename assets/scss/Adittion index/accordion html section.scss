@@ -1,54 +1,71 @@
+// introduction section 
 #introduction {
-    height: 300px;
-    background-color: rgb(236, 236, 236);
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
+  padding-bottom: 200px;
+  background-color: rgb(247, 247, 247);
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
 
-    p {
-        color: #998888;
-        font-size: 20px;
-    }
+  p {
+    color: #998888;
+    font-size: 20px;
+  }
 
-    h1 {
-        line-height: 1.32em;
-        color: #0e0e0e;
-        font-family: playfair display, serif;
-        font-size: 60px;
+  h1 {
+    line-height: 1.32em;
+    color: #0e0e0e;
+    font-family: playfair display, serif;
+    font-size: 60px;
 
-    }
+  }
 }
-#accordion-item{
-    padding-top: 100px;
-    margin-bottom: 100px;
-    .item1{
-        margin-bottom: 200px;
-    }
-    .accordion {
-        margin: 50px;   
-        dt, dd {
-           padding: 10px;
-           border: 1px solid black;
-           border-bottom: 0; 
-           &:last-of-type {
-             border-bottom: 1px solid black; 
-           }
-           a {
-             display: block;
-             color: black;
-             font-weight: bold;
-           }
+
+
+// accordion section
+#accordion {
+  padding-top: 100px;
+
+  .item {
+    margin-bottom: 200px;
+
+    .accordion_box {
+      .active {
+        background-color: tomato;
+        color: white;
+        cursor: pointer;
+      }
+
+      .acc_trigger {
+        border: 1px solid rgb(158, 151, 151);
+        position: relative;
+        height: 60px;
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        color: #5a5555;
+        letter-spacing: 2px;
+
+        &:hover {
+          background-color: tomato;
+          color: white;
+          cursor: pointer;
         }
-       dd {
-          border-top: 0; 
-          font-size: 12px;
-          &:last-of-type {
-            border-top: 1px solid white;
-            position: relative;
-            top: -1px;
-          }
-       }
-     }
+
+        i {
+          margin-right: 20px;
+          display: none;
+        }
+      }
+
+      .acc_container {
+        color: #6d6969;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+    }
+
+  }
+
 }
-
-
