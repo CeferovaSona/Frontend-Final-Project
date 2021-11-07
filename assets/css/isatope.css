@@ -1,0 +1,355 @@
+/* Dropdown Button */
+header h6 {
+  color: #3b3232;
+}
+
+header .logo-img {
+  height: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+header .logo-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+header .dropbtn {
+  background: none;
+  color: #3b3232;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+header .dropbtn:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: #494444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropdown-content a:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0e6e6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shop-contents {
+  padding-top: 70px;
+}
+
+.shop-contents li a {
+  margin-right: 30px;
+  color: #6d6666;
+  font-size: 15px;
+}
+
+.icons .search .search-icon {
+  margin-right: 40px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #9c9a9a;
+}
+
+.icons .search .search-icon:hover {
+  color: red;
+}
+
+.bag {
+  color: #9c9a9a;
+  background: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  header .logo-img {
+    width: 60px;
+    text-align: left;
+  }
+}
+
+#slider {
+  padding-top: 100px;
+  background-color: rgba(219, 221, 221, 0.39);
+}
+
+#slider .slider-item {
+  position: relative;
+}
+
+#slider .slider-text {
+  padding-top: 100px;
+}
+
+#slider .slider-text h2 {
+  font-size: 40px;
+}
+
+#slider .slider-text p {
+  color: #8f8f8f;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#slider .carousel .carousel-inner .slider-image {
+  height: 500px;
+  width: 100%;
+  border: none;
+  background-color: none;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  #slider {
+    padding-top: 5px;
+  }
+  .slider-text {
+    padding-right: 200px;
+  }
+  .slider-text h2 {
+    font-size: 10px;
+  }
+  .slider-text p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .slider-text .sara {
+    max-width: 100%;
+    height: auto;
+  }
+  .carousel {
+    padding: 100px;
+  }
+  .carousel .carousel-inner .slider-image {
+    height: 200px;
+    width: 50px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #slider {
+    padding-top: 5px;
+  }
+  .slider-text {
+    padding-right: 200px;
+  }
+  .slider-text h2 {
+    font-size: 10px;
+  }
+  .slider-text p {
+    font-size: 5px;
+    line-height: 5px;
+  }
+  .carousel {
+    padding: 200px;
+  }
+  .carousel .carousel-inner .slider-image {
+    height: 100px;
+    width: 50px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+#isatope {
+  padding-top: 100px;
+}
+
+#isatope .button {
+  border: none;
+  color: #3a3636;
+  margin-right: 50px;
+  margin-top: 16px;
+}
+
+#isatope .button:hover {
+  color: red;
+}
+
+#isatope .choice {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#isatope .choice #addition {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+  display: none;
+}
+
+#isatope .choice #addition:hover {
+  color: red;
+}
+
+#isatope .choice .heading {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#isatope .choice .card-group {
+  padding-top: 20px;
+  border: none;
+}
+
+#isatope .choice .card-group .card {
+  margin-right: 40px;
+  border: none;
+}
+
+#isatope .choice .card-group .card .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+#isatope .choice .card-group .card .card-img-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#isatope .choice .card-group .card #price {
+  border: none;
+  color: #554f4f;
+  background-color: white;
+}
+
+#isatope .choice .card-group .card #price:hover {
+  color: red;
+}
+
+#isatope .choice .card-group .card .card-title {
+  text-align: center;
+  color: #6d6a6a;
+  padding-top: 20px;
+}
+
+#isatope .choice .card-group .card .card-text {
+  text-align: center;
+  color: #f5f4f4;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  #addToCart {
+    padding-top: 50px;
+  }
+  #addToCart a {
+    margin-top: 8px;
+  }
+  .choice {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .heading {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+  .card-group {
+    padding-top: 20px;
+    border: none;
+  }
+  .card-group .card {
+    margin-right: 10px;
+    border: none;
+  }
+  .card-group .card .card-img-top {
+    height: auto;
+    width: 100%;
+  }
+  .card-group .card .card-img-top:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+  }
+  .card-group .card #price {
+    font-size: 10px;
+  }
+  .card-group .card .card-title {
+    text-align: center;
+    color: #6d6a6a;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #addToCart {
+    padding-top: 50px;
+  }
+  #addToCart a {
+    margin-top: 8px;
+  }
+  .choice {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .heading {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+  .card-group {
+    padding-top: 8px;
+    border: none;
+  }
+  .card-group .card {
+    margin-right: 8px;
+  }
+  .card-group .card .card-img-top {
+    height: auto;
+    width: 100%;
+  }
+  .card-group .card #price {
+    font-size: 10px;
+  }
+  .card-group .card .card-title {
+    text-align: center;
+    color: #6d6a6a;
+    padding-top: 10px;
+  }
+}

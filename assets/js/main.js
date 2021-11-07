@@ -1,3 +1,36 @@
+// btnScrollToTop
+var mybutton = document.getElementById("btnScrollToTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop()>300)
+    {
+      $("#btnScrollToTop").fadeIn();
+    }
+      else{
+        $("#btnScrollToTop").fadeOut();
+      }
+    $(document).ready(function(){
+    $("#btnScrollToTop").click(function(){
+      $("html,body").animate({scrollTop:0},slow)
+    })
+  })
+    })
+  });
 // about-expert section
 
 var slideIndex = 1;
@@ -40,54 +73,42 @@ var check = $.isNumeric(val);
   })
 })
 /
-// addToCart section
-$(document).ready(function(){
-  $("#price").click(function(){
-    
-      $('#addition').show();
-      
-  })
-})
-// accordion html 
-(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
 
-})(jQuery);
-// btnScrollToTop
-$(document).ready(function(){
-  $("#btnScrollToTop").click(function(){
-    $("html,body").animate({scrollTop:0},slow)
-  })
-})
-$(document).ready(function(){
-$(window).scroll(function(){
-  if ($(this).scrollTop()>40)
-  {
-    $("#btnScrollToTop").fadeIn();
-  }
-    else{
-      $("#btnScrollToTop").fadeOut();
-    }
-  
-  })
+
+
+// header
+
+$(document).ready(function() {
+  (function() {
+      var fadeSpeed = 200, fadeTo = 0.5, topDistance = 30;
+      var topbarME = function() { $('header').fadeTo(fadeSpeed,1); }, topbarML = function() { $('header').fadeTo(fadeSpeed,fadeTo); };
+      var inside = false;
+      $(window).scroll(function() {
+          position = $(window).scrollTop();
+          if(position > topDistance && !inside) {
+              topbarML();
+              $('header').bind('mouseenter',topbarME);
+              $('header').bind('mouseleave',topbarML);
+              inside = true;
+          }
+          else if (position < topDistance){
+              topbarME();
+              $('header').unbind('mouseenter',topbarME);
+              $('header').unbind('mouseleave',topbarML);
+              inside = false;
+          }
+      });
+  })();
 });
-// tab-menu section
-$(document).ready (function(){
-  $('.tab_container:first').show();
-  $('.tab_navigation li:first').addClass('active');
-  $('.tab_navigation li').click(function(event){
-index=$(this).index();
-$('.tab_navigation li').removeClass('active');
-$(this).addClass('active');
-$('.tab_container').hide();
-$('.tab_container').eq(index).show();
-  })
-})
-// standart product index counter
+// header
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//     if ($(this).scrollTop()>400)
+//     {
+//       $(".icons").fadeIn();
+//     }
+//       else{
+//         $(".icons").fadeOut();
+//       }
+//     })
+//   });

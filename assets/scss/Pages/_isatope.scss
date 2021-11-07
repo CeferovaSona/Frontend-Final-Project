@@ -1,0 +1,169 @@
+@import "./variables";
+@import "./slider";
+
+
+#isatope {
+    padding-top: $base*25;
+    padding-bottom: 50px;
+
+    .button-group {
+        .button {
+            border: none;
+            color: rgb(58, 54, 54);
+            margin-right: 50px;
+            background-color: white;
+
+            &:hover {
+                color: red;
+            }
+
+            .button:active,
+            .button.is-checked {
+                background-color: #28F;
+            }
+
+            .button.is-checked {
+                color: white;
+                text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+            }
+
+            .button:active {
+                box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+            }
+
+
+            .button-group:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+
+        .filters-select {
+            border: none;
+
+            .filter {
+                border: none;
+            }
+        }
+    }
+
+    .grid {
+        padding-top: 70px;
+        padding-bottom: $base*20;
+
+        #addition {
+            border: none;
+            color: rgb(85, 79, 79);
+            background-color: white;
+            display: none;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .name {
+            font-size: 18px;
+            letter-spacing: 3px;
+            text-align: center;
+            color: rgb(109, 106, 106);
+            padding-top: 20px;
+        }
+
+        .image {
+            height: 100%;
+            max-width: 200px;
+            display: inline;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.1s ease-out;
+            }
+        }
+
+        .price {
+            border: none;
+            color: rgb(85, 79, 79);
+            background-color: white;
+            text-align: center;
+        }
+    }
+
+    .grid {
+        display: flex;
+
+        .element-item {
+            margin-right: 100px;
+            max-width: 100%;
+        }
+
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    }
+
+}
+
+
+// responsive
+@media only screen and (max-width:$max-md-width) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #isatope {
+        padding-top: 50px;
+
+        a {
+            margin-top: $base*2;
+        }
+
+
+        .name {
+            font-size: 10px;
+            letter-spacing: 3px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        #price {
+            font-size: 10px;
+
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width:$max-sm-width) {
+    #addToCart {
+        padding-top: 50px;
+
+        .button {
+            margin-top: $base*2;
+        }
+    }
+
+    .name {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .image {
+        height: auto;
+        width: 100%;
+    }
+
+    .price {
+        font-size: 10px;
+
+    }
+}

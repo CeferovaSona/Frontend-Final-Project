@@ -79,3 +79,52 @@
 .visible{
     display:block;
 }
+// responsive
+@media only screen and (max-width:$max-md-width) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    #subscribe{
+        padding-bottom:50px;
+        padding-top:50px;
+        }
+        .subscribe-item2{
+            padding-top: 30px;
+            #subscribe-input{
+                height:20px;
+                width:200px;
+                padding-left: 100px;
+                border:none;
+            }
+            #subscribe-button{
+                height:4px;
+                width:100px;
+                padding-left: 10px;
+                border:none;
+                background-color:firebrick ;
+                color:white;
+            }
+        } 
+        }
+
+
+@media only screen and (max-width:$max-sm-width) {
+    #subscribe{
+        padding-bottom:50px;
+        padding-top:50px;
+        }
+        .subscribe-item2{
+            padding-top: 30px;
+            #subscribe-input{
+                height:20px;
+                width:200px;
+                padding-left: 100px;
+                border:none;
+            }
+            #subscribe-button{
+                height:4px;
+                width:50px;
+                font-size: 10px;
+            }
+        }
+    }
