@@ -1,8 +1,8 @@
+@import "./variables";
 @import "./blog";
 
-
 #about-experts{
-  padding-bottom: 100px;
+  padding-bottom: $base*25;
     background-color:rgba(235, 235, 235, 0.945); 
     padding:50px;
     text-align: center;
@@ -17,7 +17,7 @@
     
     .mySlides {
       display: none;
-      padding: 80px;
+      padding: $base*20;
       text-align: center;
     }
     .prev, .next {
@@ -26,7 +26,7 @@
       top: 50%;
       margin-top: -30px;
       color:rgb(146, 135, 135);
-      font-size: 20px;
+      font-size: $font-20;
       border-radius: 0 3px 3px 0;
       user-select: none;
     }
@@ -49,7 +49,7 @@
         font-style: italic;
         color:rgba(27, 23, 23, 0.8); 
         padding:50px;
-        font-size: 20px;
+        font-size: $font-20;
         line-height: 30px;
     }
     

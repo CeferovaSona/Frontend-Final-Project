@@ -1,15 +1,18 @@
+@import "./variables";
 @import"./valentine";
 
 #experts{
-padding-bottom: 100px;
-    padding-top: 100px;
+padding-bottom: $base*25;
+    padding-top:$base*25;
     .experts_item1{
         text-align: center;
        p{
-           padding-top: 30px;
+           padding: 30px ;
            color:#7e7777 ; 
-           font-size: 20px;
+           font-size: $font-20;
            line-height: 30px;
+           padding-left:230px;
+           padding-right:230px;
        } 
       
     }
@@ -17,13 +20,85 @@ padding-bottom: 100px;
         padding-top: 50px;
         .image-text{
             text-align: center;
-            padding-top: 40px;
+            padding-top:$base*5;
             p{
                 color:#4b4949 ;
             }
         }
         .experts_image{
-            margin-right: 100px;
+            margin-right:$base*25;
         }
     }
+}
+//responsive
+@media only screen and (max-width:$max-md-width) {
+    .container{
+        width:100%;
+    }
+    #experts{
+        padding-bottom: 30px;
+            padding-top:40;px
+            .experts_item1{
+                text-align: center;
+                p{
+                    padding-top: 30px ;
+                    color:#7e7777 ; 
+                    font-size:14px;
+                    line-height: 30px;
+                    padding-left:0px;
+                    padding-right:0px;
+                } 
+               
+            }
+            .experts_item2{
+                padding-top: 50px;
+                .image-text{
+                    text-align: center;
+                    padding-top:$base;
+                    p{
+                        color:#4b4949 ;
+                    }
+                }
+                .experts_image{
+                max-width: 100%;
+                height:auto
+                }
+            }
+        }
+}
+
+@media only screen and (max-width:$max-sm-width) {
+    [class*="col-"] {
+        width: 100%;
+    }
+  
+    .container{
+        width:100%;
+    }
+    #experts{
+        padding-bottom: 30px;
+            padding-top:40;px
+            .experts_item1{
+                text-align: center;
+                p{
+                    padding-top: 30px ;
+                    color:#7e7777 ; 
+                    font-size:14px;
+                    line-height: 25px;
+                    padding-left:0px;
+                    padding-right:0px;
+                } 
+               
+            }
+            .experts_item2{
+                padding-top: 20px;
+                .image-text{
+                    text-align: center;
+                }
+                .experts_image{
+                max-width: 100%;
+                height:auto
+                }
+            }
+        }
 }

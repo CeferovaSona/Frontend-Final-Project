@@ -1,46 +1,123 @@
+@import "./variables";
 @import "./slider";
 
-#addToCart{
-    padding-top: 100px;
-    .links{
-      
-    a{
-        text-decoration: none;
-        color: rgb(58, 54, 54);
-        margin-right: 50px;
-          margin-top: 100px;
-          &:hover{
-       color:red;
-          }
+
+#addToCart {
+    padding-top: $base*25;
+
+    .links {
+
+        a {
+            text-decoration: none;
+            color: rgb(58, 54, 54);
+            margin-right: 50px;
+            margin-top: $base*4;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .choice {
+        padding-top: 70px;
+        padding-bottom: $base*20;
+
+        #addition {
+            border: none;
+            color: rgb(85, 79, 79);
+            background-color: white;
+            display: none;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .heading {
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
+
+        .card-group {
+            padding-top: $base*5;
+            border: none;
+
+            .card {
+                margin-right: 40px;
+                border: none;
+
+                .card-img-top {
+                    height: 100%;
+                    width: 100%;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.1s ease-out;
+                    }
+                }
+
+                #price {
+                    border: none;
+                    color: rgb(85, 79, 79);
+                    background-color: white;
+
+                    // display: none;
+                    &:hover {
+                        color: red;
+                    }
+
+                }
+
+                .card-title {
+                    text-align: center;
+                    color: rgb(109, 106, 106);
+                    padding-top: 20px;
+                }
+
+                .card-text {
+                    text-align: center;
+                    color: rgb(245, 244, 244);
+                }
+            }
+        }
     }
 }
-.choice{
-    padding-top: 70px;
-    padding-bottom: 80px;
-#addition{
-    border:none;
-    color:rgb(85, 79, 79);
-    background-color: white;
-    display: none;
-    &:hover{
-        color:red;
-           }
-}
+
+// responsive
+@media only screen and (max-width:$max-md-width) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #addToCart {
+        padding-top: 50px;
+
+        a {
+            margin-top: $base*2;
+        }
+    }
+
+    .choice {
+        padding-top: 40px;
+        padding-bottom: $base*10;
+    }
+
     .heading {
-        font-size: 18px;
+        font-size: 10px;
         letter-spacing: 3px;
     }
 
     .card-group {
-        padding-top: 20px;
+        padding-top: $base*5;
         border: none;
 
         .card {
-            margin-right: 40px;
+            margin-right: 10px;
             border: none;
 
             .card-img-top {
-                height: 100%;
+                height: auto;
                 width: 100%;
 
                 &:hover {
@@ -48,27 +125,61 @@
                     transition: 0.1s ease-out;
                 }
             }
-#price{
-    border:none;
-    color:rgb(85, 79, 79);
-    background-color: white;
-    // display: none;
-    &:hover{
-        color:red;
-           }
 
-}
+            #price {
+                font-size: 10px;
+
+            }
+
             .card-title {
                 text-align: center;
                 color: rgb(109, 106, 106);
-                padding-top: 20px;
+                padding-top: 10px;
             }
 
-            .card-text {
-                text-align: center;
-                color: rgb(245, 244, 244);
-            }
         }
     }
 }
+
+@media only screen and (max-width:$max-sm-width) {
+    #addToCart {
+        padding-top: 50px;
+
+        a {
+            margin-top: $base*2;
+        }
+    }
+
+    .choice {
+        padding-top:20px;
+        padding-bottom: $base*5;
+    }
+
+    .heading {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .card-group {
+        padding-top: $base*2;
+        border: none;
+
+        .card {
+            margin-right: 8px;
+            .card-img-top {
+                height: auto;
+                width: 100%;
+            }
+            #price {
+                font-size: 10px;
+
+            }
+            .card-title {
+                text-align: center;
+                color: rgb(109, 106, 106);
+                padding-top: 10px;
+            }
+
+        }
+    }
 }
